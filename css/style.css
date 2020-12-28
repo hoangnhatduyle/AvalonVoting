@@ -1,0 +1,76 @@
+body {
+    background-image: url(../assets/Avalon2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Carter One', cursive;
+}
+
+#wrapper {
+    color:#FFE2A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+#container {
+    padding: 20px 10px;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px #000;
+    text-align: center;
+}
+
+#container h1 {
+    font-size: 35px;
+    font-style: italic;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: yellow;
+    margin-bottom: 15px;
+}
+
+#votingBox {
+    font-size: 25px;
+}
+
+#votingBox img:hover {
+    cursor: pointer;
+}
+
+.overlay {
+    position: sticky;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:rgba(0, 0, 0, 0.8);
+    z-index:9999;
+}
+
+.overlay p{
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.modal-dialog {
+    color: black;
+}
+
+@media (min-width: 768px) {
+    body {
+        overflow-y: hidden;
+    }    
+}
+
+@media (max-width: 767px) {
+    #container {
+        width: 350px;
+    }    
+}
